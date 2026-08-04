@@ -9,6 +9,15 @@ This folder has been split into independent, function-named projects. Original s
 | `clinical_ml_benchmarks` | Surgical-motion skill classification and COVID CT feature classifiers | `bash scripts/run_summary.sh` |
 | `ecg_signal_mining` | ECG clustering, ARIMA forecasting, and heart-disease association rules | `bash scripts/run_question.sh q1` |
 
+## Shared Python Environment
+
+Each subproject setup script can install into an active conda environment, while retaining a `.venv` fallback for fresh clones. For example:
+
+```bash
+cd surgical_skill_statistics
+conda run -n codex_python bash scripts/run_summary.sh
+```
+
 ## Notes
 
 - `toe_image_quality_assessment` includes its `.mat` dataset and can run after dependency installation.

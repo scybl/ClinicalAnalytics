@@ -6,10 +6,11 @@ QUESTION="${1:-q1}"
 
 cd "$ROOT"
 
-if [[ -f .venv/bin/activate ]]; then
+if [[ -z "${PYTHON_BIN:-}" && -f .venv/bin/activate ]]; then
   source .venv/bin/activate
 fi
 
+PYTHON_BIN="${PYTHON_BIN:-python}"
 export MPLBACKEND="${MPLBACKEND:-Agg}"
 
 case "$QUESTION" in
@@ -39,4 +40,4 @@ if [[ ! -f "$REQUIRED" ]]; then
   exit 1
 fi
 
-python "${QUESTION}.py"
+"$PYTHON_BIN" "${QUESTION}.py"
