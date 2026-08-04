@@ -1,6 +1,6 @@
-# ECG Signal Mining and Time-Series Analysis
+# CardiacSignals
 
-This project contains ECG and heart-disease data-mining experiments: unsupervised ECG beat clustering, PCA-based feature reduction, ARIMA signal forecasting, and association-rule mining for heart-disease indicators.
+CardiacSignals contains ECG and heart-disease data-mining experiments: unsupervised ECG beat clustering, PCA-based feature reduction, ARIMA signal forecasting, and association-rule mining for heart-disease indicators.
 
 ## Contents
 

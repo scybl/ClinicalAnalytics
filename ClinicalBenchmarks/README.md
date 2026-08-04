@@ -1,6 +1,6 @@
-# Clinical ML Benchmarks
+# ClinicalBenchmarks
 
-This project collects two compact medical machine-learning benchmarks: surgical-skill classification from motion features and COVID/non-COVID CT image classification from extracted image descriptors.
+ClinicalBenchmarks collects two compact medical machine-learning benchmarks: surgical-skill classification from motion features and COVID/non-COVID CT image classification from extracted image descriptors.
 
 ## Contents
 

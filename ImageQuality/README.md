@@ -1,6 +1,6 @@
-# TOE Image Quality Assessment
+# ImageQuality
 
-This project analyses transoesophageal echocardiography image quality. It compares general-impression scores and criterion percentages, ranks image views, computes image similarity against gold references, and studies whether alignment-derived rotation/translation features explain quality scores.
+ImageQuality analyses transoesophageal echocardiography image quality. It compares general-impression scores and criterion percentages, ranks image views, computes image similarity against gold references, and studies whether alignment-derived rotation/translation features explain quality scores.
 
 ## Contents
 

@@ -1,6 +1,6 @@
-# Surgical Skill Statistics and Gaze Analysis
+# SurgeryStats
 
-This project analyses surgical skill differences between expert and novice groups using completion-time statistics, Mann-Whitney U tests, procedural error scoring, and fixation-map sparsity.
+SurgeryStats analyses surgical skill differences between expert and novice groups using completion-time statistics, Mann-Whitney U tests, procedural error scoring, and fixation-map sparsity.
 
 ## Contents
 

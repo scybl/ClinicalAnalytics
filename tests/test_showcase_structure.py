@@ -6,10 +6,10 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 PROJECTS = {
-    "surgical_skill_statistics": "bash scripts/run_summary.sh",
-    "toe_image_quality_assessment": "bash scripts/run_all.sh",
-    "clinical_ml_benchmarks": "bash scripts/run_summary.sh",
-    "ecg_signal_mining": "bash scripts/run_question.sh q1",
+    "SurgeryStats": "bash scripts/run_summary.sh",
+    "ImageQuality": "bash scripts/run_all.sh",
+    "ClinicalBenchmarks": "bash scripts/run_summary.sh",
+    "CardiacSignals": "bash scripts/run_question.sh q1",
 }
 
 
@@ -19,6 +19,13 @@ def test_readme_quick_start_index_points_to_each_project():
     for project, command in PROJECTS.items():
         assert project in readme
         assert command in readme
+
+
+def test_project_folder_names_are_pascal_case():
+    for project in PROJECTS:
+        assert "_" not in project
+        assert project[0].isupper()
+        assert (ROOT / project).is_dir()
 
 
 def test_subproject_readmes_have_quick_run_and_result_snapshot():
@@ -36,7 +43,7 @@ def test_shell_entrypoints_are_syntax_valid():
 
 
 def test_notebook_uses_function_named_dataset_placeholders():
-    notebook = (ROOT / "clinical_ml_benchmarks" / "analysis.ipynb").read_text(
+    notebook = (ROOT / "ClinicalBenchmarks" / "analysis.ipynb").read_text(
         encoding="utf-8"
     )
     assert "cw3_a" not in notebook
