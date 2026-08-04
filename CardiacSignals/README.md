@@ -1,43 +1,45 @@
 # CardiacSignals
 
-CardiacSignals contains ECG and heart-disease data-mining experiments: unsupervised ECG beat clustering, PCA-based feature reduction, ARIMA signal forecasting, and association-rule mining for heart-disease indicators.
+[English](README_en.md)
 
-## Contents
+CardiacSignals 包含 ECG 和心脏病数据挖掘实验：无监督 ECG beat 聚类、基于 PCA 的特征降维、ARIMA 信号预测，以及心脏病指标关联规则挖掘。
 
-| File | Purpose |
+## 内容
+
+| 文件 | 用途 |
 | --- | --- |
-| `q1.py` | KMeans clustering with all features and PCA-reduced features |
-| `q2.py` | Gaussian mixture clustering |
-| `q3.py` | Agglomerative clustering with average/complete linkage |
-| `q4.py` | ECG single-signal stationarity analysis and ARIMA forecasting |
-| `q5.py` | Heart-disease association-rule mining |
-| `report.pdf` | Preserved written report |
+| `q1.py` | 使用全量特征和 PCA 降维特征进行 KMeans 聚类 |
+| `q2.py` | Gaussian mixture 聚类 |
+| `q3.py` | average/complete linkage 层次聚类 |
+| `q4.py` | 单条 ECG 信号平稳性分析和 ARIMA 预测 |
+| `q5.py` | 心脏病关联规则挖掘 |
+| `report.pdf` | 保留的项目报告 |
 
-## One-Command Setup
+## 一键配置
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## Quick Run
+## 快速运行
 
 ```bash
 bash scripts/run_question.sh q1
 bash scripts/run_question.sh q4
 ```
 
-The source datasets are not bundled. Place the expected files in this folder before running a question.
+源数据未随仓库分发。运行具体问题前，请把对应数据放到本目录：
 
-| Question | Expected data |
+| 问题 | 预期数据 |
 | --- | --- |
 | Q1-Q3 | `ecg_signals_preprocessed.csv` |
 | Q4 | `single_ecg_signal.csv` |
 | Q5 | `heart-statlog.csv` |
 
-## Result Snapshot
+## 结果快照
 
-| Experiment | Output |
+| 实验 | 输出 |
 | --- | --- |
-| KMeans/GMM/agglomerative clustering | Confusion matrices, macro precision/recall/F1, PCA variance plots |
-| ARIMA ECG modelling | ADF test statistics, ACF/PACF plots, and forecast diagnostics |
-| Association rules | Frequent itemsets, lift rules, conviction rules, and disease-related rules |
+| KMeans/GMM/层次聚类 | 混淆矩阵、macro precision/recall/F1 和 PCA 方差图 |
+| ARIMA ECG 建模 | ADF 检验统计量、ACF/PACF 图和预测诊断 |
+| 关联规则 | 频繁项集、lift 规则、conviction 规则和疾病相关规则 |

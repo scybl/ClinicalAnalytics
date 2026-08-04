@@ -1,43 +1,45 @@
 # SurgeryStats
 
-SurgeryStats analyses surgical skill differences between expert and novice groups using completion-time statistics, Mann-Whitney U tests, procedural error scoring, and fixation-map sparsity.
+[English](README_en.md)
 
-## Contents
+SurgeryStats 用统计方法比较专家组和新手组的手术技能差异，覆盖完成时间、Mann-Whitney U 检验、操作错误评分和注视图稀疏度分析。
 
-| File | Purpose |
+## 内容
+
+| 文件 | 用途 |
 | --- | --- |
-| `analysis.ipynb` | Notebook containing the statistical analysis workflow |
-| `report.pdf` | Preserved written report |
-| `scripts/run_summary.sh` | Lightweight command-line project summary |
-| `requirements.txt` | Python dependencies for rerunning the notebook |
+| `analysis.ipynb` | 统计分析 notebook |
+| `report.pdf` | 保留的项目报告 |
+| `scripts/run_summary.sh` | 轻量命令行摘要 |
+| `requirements.txt` | 复现 notebook 所需依赖 |
 
-## One-Command Setup
+## 一键配置
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## Quick Run
+## 快速运行
 
 ```bash
 bash scripts/run_summary.sh
 ```
 
-The summary command does not require the private/raw datasets. To rerun the full notebook, place the expected input files in this folder:
+摘要命令不需要私有/原始数据。若要完整重跑 notebook，请把预期输入文件放到本目录：
 
-| Expected input | Used for |
+| 预期输入 | 用途 |
 | --- | --- |
-| `time_experts.csv` | Expert completion-time statistics |
-| `time_novices.csv` | Novice completion-time statistics |
-| `error_data.xlsx` | Procedural error scoring |
-| `fixation_maps/experts/` | Expert gaze/fixation heatmaps |
-| `fixation_maps/novice/` | Novice gaze/fixation heatmaps |
+| `time_experts.csv` | 专家组完成时间统计 |
+| `time_novices.csv` | 新手组完成时间统计 |
+| `error_data.xlsx` | 操作错误评分 |
+| `fixation_maps/experts/` | 专家组注视热图 |
+| `fixation_maps/novice/` | 新手组注视热图 |
 
-## Result Snapshot
+## 结果快照
 
-| Analysis | Output |
+| 分析 | 输出 |
 | --- | --- |
-| Descriptive statistics | Mean, median, variance, standard deviation, skewness, and kurtosis |
-| Group comparison | Mann-Whitney U statistic, p-value, significance flag, and rank-biserial effect size |
-| Error analysis | Expert/novice procedural error summaries |
-| Fixation analysis | Non-white-pixel fixation sparsity and group comparison |
+| 描述统计 | 均值、中位数、方差、标准差、偏度和峰度 |
+| 组间比较 | Mann-Whitney U 统计量、p 值、显著性和 rank-biserial 效应量 |
+| 错误分析 | 专家/新手操作错误摘要 |
+| 注视分析 | 非白像素注视稀疏度和组间比较 |
