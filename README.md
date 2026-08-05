@@ -4,6 +4,20 @@
 
 ClinicalAnalytics 是一个医学数据科学展示仓库，已经拆分为多个相互独立、按功能命名的子项目。原始提交归档保留在 `archive/`，当前 README 和目录名优先服务于作品展示和快速复现。
 
+![ClinicalAnalytics 项目矩阵预览](docs/images/clinical-analytics-preview.svg)
+
+## 简历亮点
+
+- 将四个医学数据项目拆成独立展示单元，覆盖统计检验、图像质量、传统机器学习和 ECG 时间序列分析。
+- 为缺少原始数据的子项目保留摘要脚本和结果表，避免 README 只停留在 notebook 文件列表。
+- 配套结构测试检查 README、脚本入口和功能命名，适合作为医学数据科学作品集合集。
+
+## 复现边界
+
+- `ImageQuality` 随仓库包含 `.mat` 数据，可安装依赖后完整运行。
+- `SurgeryStats`、`ClinicalBenchmarks`、`CardiacSignals` 的部分原始数据未随仓库分发，README 标明了所需输入。
+- CI 使用结构测试和脚本语法检查，不依赖私有数据。
+
 | 项目 | 重点能力 | 快速命令 |
 | --- | --- | --- |
 | `SurgeryStats` | 手术时间、错误评分和眼动/注视统计 | `bash scripts/run_summary.sh` |

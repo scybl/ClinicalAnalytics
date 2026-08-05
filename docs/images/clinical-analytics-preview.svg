@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">ClinicalAnalytics project matrix preview</title>
+  <desc id="desc">A four project medical analytics matrix covering surgery statistics, image quality, clinical ML, and ECG mining.</desc>
+  <rect width="1000" height="560" fill="#f6f7f9"/>
+  <rect x="46" y="42" width="908" height="476" rx="18" fill="#ffffff" stroke="#d9dee7"/>
+  <text x="82" y="92" fill="#172033" font-family="Arial, sans-serif" font-size="34" font-weight="700">ClinicalAnalytics</text>
+  <text x="82" y="124" fill="#647184" font-family="Arial, sans-serif" font-size="17">Medical statistics, image quality, clinical ML, and ECG signal mining</text>
+
+  <g transform="translate(86 170)">
+    <rect width="390" height="126" rx="14" fill="#eef7ff" stroke="#9cccf2"/>
+    <text x="26" y="42" fill="#12324a" font-family="Arial, sans-serif" font-size="22" font-weight="700">SurgeryStats</text>
+    <text x="26" y="72" fill="#40566d" font-family="Arial, sans-serif" font-size="14">Timing, errors, gaze sparsity</text>
+    <rect x="260" y="34" width="24" height="62" fill="#1f6feb"/>
+    <rect x="292" y="52" width="24" height="44" fill="#60a5fa"/>
+    <rect x="324" y="68" width="24" height="28" fill="#93c5fd"/>
+  </g>
+  <g transform="translate(524 170)">
+    <rect width="390" height="126" rx="14" fill="#fff4df" stroke="#e3bb68"/>
+    <text x="26" y="42" fill="#46310f" font-family="Arial, sans-serif" font-size="22" font-weight="700">ImageQuality</text>
+    <text x="26" y="72" fill="#6b531f" font-family="Arial, sans-serif" font-size="14">TOE scoring, SSIM, alignment</text>
+    <circle cx="288" cy="64" r="28" fill="#ffffff" stroke="#f59e0b" stroke-width="5"/>
+    <circle cx="330" cy="64" r="28" fill="none" stroke="#10b981" stroke-width="5"/>
+  </g>
+  <g transform="translate(86 332)">
+    <rect width="390" height="126" rx="14" fill="#f1f8ec" stroke="#a8d18d"/>
+    <text x="26" y="42" fill="#17351c" font-family="Arial, sans-serif" font-size="22" font-weight="700">ClinicalBenchmarks</text>
+    <text x="26" y="72" fill="#405d3a" font-family="Arial, sans-serif" font-size="14">Surgical skill and COVID CT models</text>
+    <path d="M260 88 C286 40 312 96 344 44" fill="none" stroke="#10b981" stroke-width="6"/>
+  </g>
+  <g transform="translate(524 332)">
+    <rect width="390" height="126" rx="14" fill="#f7efff" stroke="#c7a6f2"/>
+    <text x="26" y="42" fill="#3a1f5f" font-family="Arial, sans-serif" font-size="22" font-weight="700">CardiacSignals</text>
+    <text x="26" y="72" fill="#5c4378" font-family="Arial, sans-serif" font-size="14">ECG clustering, ARIMA, rules</text>
+    <path d="M250 70 h24 l10 -26 18 62 12 -36 h48" fill="none" stroke="#8b5cf6" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+</svg>

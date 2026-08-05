@@ -1,5 +1,6 @@
 from pathlib import Path
 import subprocess
+import xml.etree.ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,11 +16,22 @@ PROJECTS = {
 
 def test_readme_quick_start_index_points_to_each_project():
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    english = (ROOT / "README_en.md").read_text(encoding="utf-8")
     assert "## 快速上手索引" in readme
+    assert "## 简历亮点" in readme
+    assert "## 复现边界" in readme
+    assert "## Resume Highlights" in english
+    assert "## Reproducibility Boundaries" in english
     for project, command in PROJECTS.items():
         assert project in readme
         assert command in readme
     assert (ROOT / "README_en.md").is_file()
+
+
+def test_showcase_preview_asset_exists_and_is_valid_svg():
+    image = ROOT / "docs" / "images" / "clinical-analytics-preview.svg"
+    assert image.is_file()
+    ET.parse(image)
 
 
 def test_project_folder_names_are_pascal_case():

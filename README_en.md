@@ -4,6 +4,20 @@
 
 ClinicalAnalytics is a compact medical data-science showcase split into independent, function-named projects. Original submission archives are retained under `archive/` for traceability.
 
+![ClinicalAnalytics project matrix preview](docs/images/clinical-analytics-preview.svg)
+
+## Resume Highlights
+
+- Splits four medical data projects into independent showcase units covering statistical testing, image quality, classical ML, and ECG time-series analysis.
+- Keeps summary scripts and result tables for projects whose original datasets are not bundled, so the repository remains reviewable.
+- Includes structure tests for README coverage, script entry points, and function-based naming across the collection.
+
+## Reproducibility Boundaries
+
+- `ImageQuality` includes its `.mat` dataset and can run end-to-end after dependency installation.
+- `SurgeryStats`, `ClinicalBenchmarks`, and `CardiacSignals` retain notebooks/reports/scripts, but some original datasets are not distributed.
+- CI uses structure tests and shell syntax checks rather than private datasets.
+
 | Project | Focus | Quick command |
 | --- | --- | --- |
 | `SurgeryStats` | Surgical timing, error, and gaze/fixation statistics | `bash scripts/run_summary.sh` |
