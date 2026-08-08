@@ -4,7 +4,7 @@
 
 ImageQuality 分析经食道超声心动图 TOE 图像质量。项目比较总体印象评分和标准百分比，对视图质量排序，计算图像与 gold reference 的相似度，并研究配准得到的旋转/平移特征是否能解释质量评分。
 
-## 内容
+## 目录结构
 
 | 文件 | 用途 |
 | --- | --- |
@@ -15,13 +15,13 @@ ImageQuality 分析经食道超声心动图 TOE 图像质量。项目比较总�
 | `q4.py` | ECC 配准特征和评分回归 |
 | `scripts/run_all.sh` | 顺序运行四个分析脚本 |
 
-## 一键配置
+## 快速上手
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## 快速运行
+## 运行
 
 ```bash
 bash scripts/run_all.sh
@@ -29,7 +29,7 @@ bash scripts/run_all.sh
 
 脚本默认设置 `MPLBACKEND=Agg`，适合无图形界面的终端环境生成图表。
 
-## 结果快照
+## 结果展示
 
 | 问题 | 输出 |
 | --- | --- |

@@ -4,7 +4,7 @@
 
 ImageQuality analyses transoesophageal echocardiography image quality. It compares general-impression scores and criterion percentages, ranks image views, computes image similarity against gold references, and studies whether alignment-derived rotation/translation features explain quality scores.
 
-## Contents
+## Project Layout
 
 | File | Purpose |
 | --- | --- |
@@ -15,13 +15,13 @@ ImageQuality analyses transoesophageal echocardiography image quality. It compar
 | `q4.py` | ECC alignment features and score regression |
 | `scripts/run_all.sh` | Runs the four analysis scripts in sequence |
 
-## One-Command Setup
+## Quick Start
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## Quick Run
+## Run
 
 ```bash
 bash scripts/run_all.sh
@@ -29,7 +29,7 @@ bash scripts/run_all.sh
 
 The script sets `MPLBACKEND=Agg` by default, so plots can be generated in headless terminal sessions.
 
-## Result Snapshot
+## Results
 
 | Question | Output |
 | --- | --- |

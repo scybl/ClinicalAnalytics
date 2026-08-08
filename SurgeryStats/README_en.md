@@ -4,7 +4,7 @@
 
 SurgeryStats analyses surgical skill differences between expert and novice groups using completion-time statistics, Mann-Whitney U tests, procedural error scoring, and fixation-map sparsity.
 
-## Contents
+## Project Layout
 
 | File | Purpose |
 | --- | --- |
@@ -13,13 +13,13 @@ SurgeryStats analyses surgical skill differences between expert and novice group
 | `scripts/run_summary.sh` | Lightweight command-line project summary |
 | `requirements.txt` | Python dependencies for rerunning the notebook |
 
-## One-Command Setup
+## Quick Start
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## Quick Run
+## Run
 
 ```bash
 bash scripts/run_summary.sh
@@ -35,7 +35,7 @@ The summary command does not require the private/raw datasets. To rerun the full
 | `fixation_maps/experts/` | Expert gaze/fixation heatmaps |
 | `fixation_maps/novice/` | Novice gaze/fixation heatmaps |
 
-## Result Snapshot
+## Results
 
 | Analysis | Output |
 | --- | --- |

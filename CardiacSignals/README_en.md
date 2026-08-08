@@ -4,7 +4,7 @@
 
 CardiacSignals contains ECG and heart-disease data-mining experiments: unsupervised ECG beat clustering, PCA-based feature reduction, ARIMA signal forecasting, and association-rule mining for heart-disease indicators.
 
-## Contents
+## Project Layout
 
 | File | Purpose |
 | --- | --- |
@@ -15,13 +15,13 @@ CardiacSignals contains ECG and heart-disease data-mining experiments: unsupervi
 | `q5.py` | Heart-disease association-rule mining |
 | `report.pdf` | Preserved written report |
 
-## One-Command Setup
+## Quick Start
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## Quick Run
+## Run
 
 ```bash
 bash scripts/run_question.sh q1
@@ -36,7 +36,7 @@ The source datasets are not bundled. Place the expected files in this folder bef
 | Q4 | `single_ecg_signal.csv` |
 | Q5 | `heart-statlog.csv` |
 
-## Result Snapshot
+## Results
 
 | Experiment | Output |
 | --- | --- |

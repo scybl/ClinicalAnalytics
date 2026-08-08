@@ -17,13 +17,16 @@ PROJECTS = {
 def test_readme_quick_start_index_points_to_each_project():
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     english = (ROOT / "README_en.md").read_text(encoding="utf-8")
-    assert "## 快速上手索引" in readme
+    assert "## 功能说明" in readme
     assert "## 结果展示" in readme
-    assert "## 核心功能" in readme
-    assert "## 复现边界" in readme
+    assert "## 快速上手" in readme
+    assert "## 环境要求" in readme
+    assert "## 数据说明" in readme
     assert "## Results" in english
-    assert "## Core Features" in english
-    assert "## Reproducibility Boundaries" in english
+    assert "## Features" in english
+    assert "## Quick Start" in english
+    assert "## Requirements" in english
+    assert "## Data Notes" in english
     for project, command in PROJECTS.items():
         assert project in readme
         assert command in readme
@@ -46,8 +49,8 @@ def test_project_folder_names_are_pascal_case():
 def test_subproject_readmes_have_quick_run_and_result_snapshot():
     for project in PROJECTS:
         readme = (ROOT / project / "README.md").read_text(encoding="utf-8")
-        assert "## 快速运行" in readme
-        assert "## 结果快照" in readme
+        assert "## 运行" in readme
+        assert "## 结果展示" in readme
         assert (ROOT / project / "README_en.md").is_file()
 
 

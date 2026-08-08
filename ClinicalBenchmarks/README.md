@@ -4,7 +4,7 @@
 
 ClinicalBenchmarks 汇总两个紧凑的医学机器学习基准：基于运动特征的手术技能分类，以及基于 CT 图像描述子的 COVID/non-COVID 分类。
 
-## 内容
+## 目录结构
 
 | 文件 | 用途 |
 | --- | --- |
@@ -13,19 +13,19 @@ ClinicalBenchmarks 汇总两个紧凑的医学机器学习基准：基于运动�
 | `scripts/run_summary.sh` | 打印 notebook 摘要中的关键指标 |
 | `requirements.txt` | 复现 notebook 所需依赖 |
 
-## 一键配置
+## 快速上手
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## 快速运行
+## 运行
 
 ```bash
 bash scripts/run_summary.sh
 ```
 
-## 结果快照
+## 结果展示
 
 | 任务 | 最佳模型或方法 | 指标快照 |
 | --- | --- | --- |

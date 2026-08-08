@@ -4,7 +4,7 @@
 
 ClinicalBenchmarks collects two compact medical machine-learning benchmarks: surgical-skill classification from motion features and COVID/non-COVID CT image classification from extracted image descriptors.
 
-## Contents
+## Project Layout
 
 | File | Purpose |
 | --- | --- |
@@ -13,19 +13,19 @@ ClinicalBenchmarks collects two compact medical machine-learning benchmarks: sur
 | `scripts/run_summary.sh` | Prints key metrics from the notebook summary |
 | `requirements.txt` | Python dependencies for rerunning the notebook |
 
-## One-Command Setup
+## Quick Start
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## Quick Run
+## Run
 
 ```bash
 bash scripts/run_summary.sh
 ```
 
-## Result Snapshot
+## Results
 
 | Task | Best model or method | Metric snapshot |
 | --- | --- | --- |

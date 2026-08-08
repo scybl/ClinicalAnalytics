@@ -2,68 +2,65 @@
 
 [English](README_en.md)
 
-ClinicalAnalytics 是一个医学数据科学展示仓库，已经拆分为多个相互独立、按功能命名的子项目。原始提交归档保留在 `archive/`，当前 README 和目录名优先服务于作品展示和快速复现。
+ClinicalAnalytics 是一个医学数据分析项目集合，包含统计检验、图像质量分析、临床机器学习和 ECG 时间序列分析。
 
 ![ClinicalAnalytics 项目矩阵预览](docs/images/clinical-analytics-preview.svg)
 
+## 功能说明
+
+- `SurgeryStats`：手术时间、错误评分和眼动/注视统计。
+- `ImageQuality`：TOE 图像质量评分、相似度指标和配准分析。
+- `ClinicalBenchmarks`：手术技能分类和 COVID CT 特征分类。
+- `CardiacSignals`：ECG 聚类、ARIMA 预测和关联规则分析。
+
 ## 结果展示
 
-| 展示项 | 当前结果 | 说明 |
-| --- | --- | --- |
-| 子项目数量 | 4 个 | 统计检验、图像质量、临床 ML、ECG 时间序列 |
-| 可完整运行数据 | `ImageQuality` | 仓库内包含 `.mat` 数据和一键脚本 |
-| 无数据摘要 | `SurgeryStats`, `ClinicalBenchmarks` | 保留可展示的摘要脚本和方法说明 |
-| 轻量验证 | 6 个结构测试 | 检查入口、README、脚本和命名一致性 |
-
-## 核心功能
-
-- 将四个医学数据项目拆成独立展示单元，覆盖统计检验、图像质量、传统机器学习和 ECG 时间序列分析。
-- 为缺少原始数据的子项目保留摘要脚本和结果表，避免 README 只停留在 notebook 文件列表。
-- 配套结构测试检查 README、脚本入口和功能命名，用于保证各子项目入口和命名一致。
-
-## 复现边界
-
-- `ImageQuality` 随仓库包含 `.mat` 数据，可安装依赖后完整运行。
-- `SurgeryStats`、`ClinicalBenchmarks`、`CardiacSignals` 的部分原始数据未随仓库分发，README 标明了所需输入。
-- CI 使用结构测试和脚本语法检查，不依赖私有数据。
-
-| 项目 | 重点能力 | 快速命令 |
-| --- | --- | --- |
-| `SurgeryStats` | 手术时间、错误评分和眼动/注视统计 | `bash scripts/run_summary.sh` |
-| `ImageQuality` | TOE 图像质量评分、相似度指标和配准分析 | `bash scripts/run_all.sh` |
-| `ClinicalBenchmarks` | 手术动作技能分类与 COVID CT 特征分类 | `bash scripts/run_summary.sh` |
-| `CardiacSignals` | ECG 聚类、ARIMA 预测和心脏病关联规则 | `bash scripts/run_question.sh q1` |
-
-## 快速上手索引
-
-| 目标 | 入口 |
+| 子项目 | 运行入口 |
 | --- | --- |
-| 最快无数据摘要 | `cd SurgeryStats && conda run -n codex_python bash scripts/run_summary.sh` |
-| 含数据完整运行 | `cd ImageQuality && bash scripts/setup_env.sh && bash scripts/run_all.sh` |
-| 临床基准指标 | `cd ClinicalBenchmarks && conda run -n codex_python bash scripts/run_summary.sh` |
-| ECG 问题脚本 | `cd CardiacSignals && bash scripts/run_question.sh q1` |
-| 结构测试 | `conda run -n codex_python pytest tests/ -q` |
+| `SurgeryStats` | `bash scripts/run_summary.sh` |
+| `ImageQuality` | `bash scripts/run_all.sh` |
+| `ClinicalBenchmarks` | `bash scripts/run_summary.sh` |
+| `CardiacSignals` | `bash scripts/run_question.sh q1` |
 
-## 共享 Python 环境
+## 快速上手
 
-每个子项目的 setup 脚本都可以安装到当前 conda 环境，同时保留 `.venv` 回退方式。当前机器推荐直接复用 `codex_python`：
+```bash
+cd ImageQuality
+bash scripts/setup_env.sh
+bash scripts/run_all.sh
+```
+
+无数据摘要示例：
 
 ```bash
 cd SurgeryStats
 conda run -n codex_python bash scripts/run_summary.sh
 ```
 
-## 项目说明
+## 环境要求
 
-- `ImageQuality` 包含 `.mat` 数据集，安装依赖后可运行完整分析。
-- `SurgeryStats`、`ClinicalBenchmarks`、`CardiacSignals` 保留 notebook、报告和脚本，但部分原始数据未随仓库分发。
-- 每个子目录都有自己的中文 README、英文 `README_en.md`、依赖文件和脚本入口。
+- Python 3.10+
+- 各子项目依赖见对应目录的 `requirements.txt`
 
-## 结果快照
+## 数据说明
 
-| 项目 | 输出 |
-| --- | --- |
-| `SurgeryStats` | 描述统计、Mann-Whitney U 检验、错误评分和注视图稀疏度 |
-| `ImageQuality` | 相关性、回归、SSIM/互信息/余弦相似度和配准特征分析 |
-| `ClinicalBenchmarks` | 传统机器学习分类器的 accuracy、F1 等指标摘要 |
-| `CardiacSignals` | 聚类指标、ARIMA 诊断和关联规则结果 |
+- `ImageQuality` 包含可运行的 `.mat` 数据。
+- 其他子项目保留脚本、notebook 和结果摘要；部分原始数据未随仓库分发。
+
+## 目录结构
+
+```text
+SurgeryStats/           手术统计分析
+ImageQuality/           图像质量分析
+ClinicalBenchmarks/     临床机器学习基准
+CardiacSignals/         ECG 时间序列分析
+tests/                  结构测试
+docs/images/            README 结果图
+archive/                原始材料归档
+```
+
+## 测试
+
+```bash
+pytest tests/ -q
+```

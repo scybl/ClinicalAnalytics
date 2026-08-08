@@ -4,7 +4,7 @@
 
 CardiacSignals 包含 ECG 和心脏病数据挖掘实验：无监督 ECG beat 聚类、基于 PCA 的特征降维、ARIMA 信号预测，以及心脏病指标关联规则挖掘。
 
-## 内容
+## 目录结构
 
 | 文件 | 用途 |
 | --- | --- |
@@ -15,13 +15,13 @@ CardiacSignals 包含 ECG 和心脏病数据挖掘实验：无监督 ECG beat �
 | `q5.py` | 心脏病关联规则挖掘 |
 | `report.pdf` | 保留的项目报告 |
 
-## 一键配置
+## 快速上手
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## 快速运行
+## 运行
 
 ```bash
 bash scripts/run_question.sh q1
@@ -36,7 +36,7 @@ bash scripts/run_question.sh q4
 | Q4 | `single_ecg_signal.csv` |
 | Q5 | `heart-statlog.csv` |
 
-## 结果快照
+## 结果展示
 
 | 实验 | 输出 |
 | --- | --- |

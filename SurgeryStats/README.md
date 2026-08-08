@@ -4,7 +4,7 @@
 
 SurgeryStats 用统计方法比较专家组和新手组的手术技能差异，覆盖完成时间、Mann-Whitney U 检验、操作错误评分和注视图稀疏度分析。
 
-## 内容
+## 目录结构
 
 | 文件 | 用途 |
 | --- | --- |
@@ -13,13 +13,13 @@ SurgeryStats 用统计方法比较专家组和新手组的手术技能差异，�
 | `scripts/run_summary.sh` | 轻量命令行摘要 |
 | `requirements.txt` | 复现 notebook 所需依赖 |
 
-## 一键配置
+## 快速上手
 
 ```bash
 bash scripts/setup_env.sh
 ```
 
-## 快速运行
+## 运行
 
 ```bash
 bash scripts/run_summary.sh
@@ -35,7 +35,7 @@ bash scripts/run_summary.sh
 | `fixation_maps/experts/` | 专家组注视热图 |
 | `fixation_maps/novice/` | 新手组注视热图 |
 
-## 结果快照
+## 结果展示
 
 | 分析 | 输出 |
 | --- | --- |
