@@ -6,6 +6,15 @@ ClinicalAnalytics is a compact medical data-science showcase split into independ
 
 ![ClinicalAnalytics project matrix preview](docs/images/clinical-analytics-preview.svg)
 
+## Result Showcase
+
+| Showcase item | Current result | Notes |
+| --- | --- | --- |
+| Subprojects | 4 | Statistical testing, image quality, clinical ML, and ECG time series |
+| Fully runnable data | `ImageQuality` | Includes `.mat` data and a one-command script |
+| No-data summaries | `SurgeryStats`, `ClinicalBenchmarks` | Keeps showcase summaries and method notes available |
+| Lightweight verification | 6 structure tests | Checks entry points, READMEs, scripts, and naming consistency |
+
 ## Resume Highlights
 
 - Splits four medical data projects into independent showcase units covering statistical testing, image quality, classical ML, and ECG time-series analysis.

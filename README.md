@@ -6,6 +6,15 @@ ClinicalAnalytics 是一个医学数据科学展示仓库，已经拆分为多�
 
 ![ClinicalAnalytics 项目矩阵预览](docs/images/clinical-analytics-preview.svg)
 
+## 成果速览
+
+| 展示项 | 当前结果 | 说明 |
+| --- | --- | --- |
+| 子项目数量 | 4 个 | 统计检验、图像质量、临床 ML、ECG 时间序列 |
+| 可完整运行数据 | `ImageQuality` | 仓库内包含 `.mat` 数据和一键脚本 |
+| 无数据摘要 | `SurgeryStats`, `ClinicalBenchmarks` | 保留可展示的摘要脚本和方法说明 |
+| 轻量验证 | 6 个结构测试 | 检查入口、README、脚本和命名一致性 |
+
 ## 简历亮点
 
 - 将四个医学数据项目拆成独立展示单元，覆盖统计检验、图像质量、传统机器学习和 ECG 时间序列分析。
