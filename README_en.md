@@ -2,22 +2,22 @@
 
 [中文](README.md)
 
-ClinicalAnalytics is a compact medical data-science showcase split into independent, function-named projects. Original submission archives are retained under `archive/` for traceability.
+ClinicalAnalytics is a compact medical data-science collection split into independent, function-named projects. Original submission archives are retained under `archive/` for traceability.
 
 ![ClinicalAnalytics project matrix preview](docs/images/clinical-analytics-preview.svg)
 
-## Result Showcase
+## Results
 
 | Showcase item | Current result | Notes |
 | --- | --- | --- |
 | Subprojects | 4 | Statistical testing, image quality, clinical ML, and ECG time series |
 | Fully runnable data | `ImageQuality` | Includes `.mat` data and a one-command script |
-| No-data summaries | `SurgeryStats`, `ClinicalBenchmarks` | Keeps showcase summaries and method notes available |
+| No-data summaries | `SurgeryStats`, `ClinicalBenchmarks` | Keeps summary outputs and method notes available |
 | Lightweight verification | 6 structure tests | Checks entry points, READMEs, scripts, and naming consistency |
 
-## Resume Highlights
+## Core Features
 
-- Splits four medical data projects into independent showcase units covering statistical testing, image quality, classical ML, and ECG time-series analysis.
+- Splits four medical data projects into independent units covering statistical testing, image quality, classical ML, and ECG time-series analysis.
 - Keeps summary scripts and result tables for projects whose original datasets are not bundled, so the repository remains reviewable.
 - Includes structure tests for README coverage, script entry points, and function-based naming across the collection.
 

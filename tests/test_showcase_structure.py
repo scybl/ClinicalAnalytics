@@ -18,11 +18,11 @@ def test_readme_quick_start_index_points_to_each_project():
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     english = (ROOT / "README_en.md").read_text(encoding="utf-8")
     assert "## 快速上手索引" in readme
-    assert "## 成果速览" in readme
-    assert "## 简历亮点" in readme
+    assert "## 结果展示" in readme
+    assert "## 核心功能" in readme
     assert "## 复现边界" in readme
-    assert "## Result Showcase" in english
-    assert "## Resume Highlights" in english
+    assert "## Results" in english
+    assert "## Core Features" in english
     assert "## Reproducibility Boundaries" in english
     for project, command in PROJECTS.items():
         assert project in readme
